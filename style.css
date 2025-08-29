@@ -2,33 +2,283 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
 .d1{
     width: 100%;
-    height: 100vh;
-    /* background-image: url(images/grey-wallpaper-background-banner-animated-260nw-2330240573.jpg); */
-    background-image: rgb(182, 182, 182);
-    /* background-size: cover; */
+    
+    background: linear-gradient(to right, #0f0c29,#302b63,#24243e) ;
+    
 }
 
-.nav-bar{ 
-    
+.my-icon{
+    padding: 15px;
+    font-size: 30px;
+    color: greenyellow;
+}
+
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    border: 1px solid white;
+    align-items: center;
+    /* background: #24243e; */
+    padding: 10px 20px;
+    }
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav{
-    border: 1px solid white;
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: flex-end !;
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hide toggle button on large screens */
+.toggle-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+/* --- Responsive for small devices --- */
+@media (max-width: 768px) {
+.toggle-btn {
+    display: block;
+    }
+
+.nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    background: #302b63;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px 0;
+    }
+    
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-links li a {
+        display: block;
+        color: white;
+    }
+    
+    .nav-links.show {
+        display: flex; /* show when toggled */
+    }
+}
+
+
+.glow-text {
+    color: white !important;
+    font-size: 25px;
+}
+
+.glow-text:hover {
+  text-shadow: 0 0 20px whitesmoke; /* glow color and size */
+} */
+
+
+.hero {
+    position: relative; 
+    text-align: center; 
+}
+
+.back-text {
+    margin-top: 40px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8); /* slight transparency */
+    z-index: 1; /* LOWER than the image */
+}
+
+.front-image {
+    position: relative; 
+    top: -400px;
+    width: 90%;
 
 }
+
 .my-btn{
 
-    border: 1px;
-    border-radius: 150x75;
+    text-decoration: none; width: 100%; 
+    
 }
+
+/* ######################################################################## */
+
+.my-mem{
+
+    color: whitesmoke;
+    background: linear-gradient(to right, #0f0c29,#302b63,#24243e) ;
+
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .plan {
+            background-color: #1c1c1c;
+            padding: 0 0 25px 0;
+            border-radius: 15px;
+            flex: 1;
+            min-width: 280px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid #333;
+            overflow: hidden;
+        }
+
+        .plan:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            border-color: #f39c12;
+        }
+
+        .plan img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .plan:hover img {
+            transform: scale(1.1);
+        }
+
+        .plan-content {
+            padding: 25px;
+            height: 50%;
+        }
+
+        .my-img{
+            width: 100%;
+            height: 50%;
+        }
+        .plan h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #f39c12;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 0.95rem;
+            color: #ddd;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: max-content;
+            margin: 0 auto;
+            background: #f39c12;
+            color: #111;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+.btn:hover {
+            background: #fff;
+            color: #111;
+        }
+
+.perks {
+            margin-top: 40px;
+            background-color: #1c1c1c;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+.perks h2 {
+            color: #f39c12;
+        }
+
+.perks ul {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+.perks ul li {
+            margin: 8px 0;
+            color: #ccc;
+        }
+
+footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+            color: #888;
+            font-size: 0.9rem;
+        }
