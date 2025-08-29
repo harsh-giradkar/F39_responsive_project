@@ -13,36 +13,32 @@
     
     <div class="d1 ">
 
-        <nav>
-            <i class="fa-solid fa-dumbbell fa-beat my-icon"> Fit</i>
-            <ul class="nav-bar">
-                <li class="nav-items glow-text">
-                    <a href="#">Home</a>
-                </li>
-                
-                <li class="nav-items glow-text">
-                    <a href="#">Membership</a>
-                </li>
-                
-                <li class="nav-items glow-text">
-                    <a href="#">Home</a>
-                </li>
-                
-                <li class="nav-items glow-text">
-                    <a href="#">Team</a>
-                </li>
-                
-                <li class="nav-items glow-text">
-                    <a href="#">About Us</a>
-                </li>
-
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-dumbbell fa-beat my-icon"> Fit</i>
+            </div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links nav-bar " id="navLinks">
+                <li><a class="nav-items glow-text" href="index1.html">Home</a></li>
+                <li><a class="nav-items glow-text" href="Membership.html">Membership</a></li>
+                <li><a class="nav-items glow-text" href="Team.html">Team</a></li>
+                <li><a class="nav-items glow-text" href="About.html">About Us</a></li>
             </ul>
-            <button class="btn btn-success">Contact Us</button>
         </nav>
+        <button class="btn btn-success my-btn">
+            <a href="contact.html">Contact Us</a>
+        </button>
 
+        </div>
+
+        <div class="hero" >
+
+            <h1 class="back-text">Sculpt Your Body,<br>Elevate Your Spirit</h1>
+            
+            <img src="concepts/images (3).png" alt="Fitness model" class="front-image">
+        </div>
+        
     </div>
-
-    <div class="bg-black"></div>
-
+    
 </body>
 </html>
